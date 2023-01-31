@@ -1,4 +1,4 @@
-@import url('https://font.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
 
 * {
     margin: 0;
@@ -50,6 +50,7 @@ body {
     margin: 12px 0 8px;
     font-size: 1.15rem;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .refresh-btn {
@@ -67,4 +68,21 @@ body {
     border: 2px solid #fff;
     box-shadow: 0 15px 25px rgba(57, 87, 220, 0.2);
     transform: translateX(-50%);
+}
+
+@media screen and (max-width: 510px) {
+    .container {
+        margin: 10px;
+    }
+    .container .color {
+        margin: 8px;
+        padding: 5px;
+    }
+    .color .rect-box {
+        width: 145px;
+        height: 145px;
+    }
+    .color .hex-value {
+        font-size: 1.05rem;
+    }
 }
